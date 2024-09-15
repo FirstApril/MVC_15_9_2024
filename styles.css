@@ -1,0 +1,71 @@
+/* styles.css */
+
+.hidden {
+    display: none;
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Input styling */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* This ensures padding is included in the width */
+  }
+  
+  /* Button styling */
+  button {
+    display: block; /* Changed to block to match input width */
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button#kickBackButton {
+    background-color: #ff4f4f; /* Red for kicking the goat */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button#kickBackButton:hover {
+    background-color: #e63939;
+  }
+  
+  /* Result section styling */
+  #result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  /* Animal details section styling */
+  #animalDetails {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #animalDetails p {
+    margin: 5px 0;
+  }

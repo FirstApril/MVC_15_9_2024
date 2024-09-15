@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cow Strike - Cow and Goat Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cow Strike - Cow and Goat Checker</h1>
+        
+        <label for="animalIdInput">Enter Cow/Goat ID:</label>
+        <input type="text" id="animalIdInput" maxlength="8">
+        <button id="checkButton">Check</button>
+
+        <div id="result"></div>
+
+        <div id="animalDetails" class="hidden">
+            <h2>Animal Details</h2>
+            <p><strong>ID:</strong> <span id="animalId"></span></p>
+            <p><strong>Age:</strong> <span id="animalAge"></span></p>
+            <p><strong>Teats:</strong> <span id="animalTeats"></span></p>
+            <p><strong>Milk Yield:</strong> <span id="animalMilk"></span></p>
+            
+            <button id="yieldMilkButton" class="hidden">Yield Milk</button>
+            <button id="kickBackButton" class="hidden">Kick Back to Mountain</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
