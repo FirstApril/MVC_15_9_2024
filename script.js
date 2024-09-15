@@ -108,14 +108,15 @@ class CowController {
             if (Math.random() < 0.05) {
                 this.model.updateTeats(animalId, 3);
                 this.view.displayResult(`Oops! Cow with ID ${animalId} lost a teat. Now has 3 teats.`);
-                this.view.hideAllButtons();
             }
 
             this.view.updateMilkYield(this.model.calculateMilkYield(animal));
         } else {
             this.view.displayResult("Cannot yield milk. Ensure the cow has 4 teats.");
         }
-        this.view.showAnimalDetails(animal, milkYield);
+        this.view.resetInput();
+        this.view.hideAnimalDetails();
+        this.view.hideAllButtons();
     }
 
     kickBack() {
